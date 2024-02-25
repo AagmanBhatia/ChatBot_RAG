@@ -1,5 +1,5 @@
 import streamlit as st
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings
@@ -56,7 +56,7 @@ def handle_userinput(user_question):
 
 
 def main():
-    load_dotenv()
+    #load_dotenv()
     link = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEmblem_of_Lakshadweep&psig=AOvVaw0EHNTIsrMJjfpoDVWMEHhu&ust=1707716868357000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLjDrJ3LooQDFQAAAAAdAAAAABAE"
     st.set_page_config(page_title = "Lakshadweep ChatBot", page_icon="link")
 
